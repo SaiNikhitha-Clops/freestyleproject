@@ -88,7 +88,7 @@ def notifyBuild(String buildStatus = 'STARTED', String colorCode = '#5492f7', St
 
   def project = 'freestyleproject'
   def channel = "@manoj.k"
-  def base = "https://github.com/devaprabhu1995/demo-tech-start-2.git/${project}/commits/"
+  def base = "https://github.com/devaprabhu1995/freestyleproject.git/${project}/commits/"
 
   def commit = sh(returnStdout: true, script: 'git log -n 1 --format="%H"').trim()
   def link = "${base}${commit}"
